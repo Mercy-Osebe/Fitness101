@@ -30,8 +30,9 @@
                 android:layout_marginTop="15.0dp"
                 android:background="@drawable/background_crop"
                 android:orientation="vertical"
-                android:onClick="before18years">
+                >
                 <LinearLayout
+                    android:onClick="before18years"
                     android:layout_width="match_parent"
                     android:layout_height="163dp"
                     android:layout_gravity="center"
@@ -113,6 +114,7 @@
                 <!--                end of internal horizontal linear layout-->
                 <!--                continuation of internal vertical linear layout-->
                 <Button
+                    android:id="@+id/under18"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
@@ -128,8 +130,9 @@
                 android:layout_marginTop="15.0dp"
                 android:background="@drawable/background_crop"
                 android:orientation="vertical"
-                android:onClick="after18years">
+                >
                 <LinearLayout
+                    android:onClick="after18years"
                     android:layout_width="match_parent"
                     android:layout_height="163dp"
                     android:layout_gravity="center"
@@ -203,6 +206,7 @@
                 <!--                end of internal horizontal linear layout-->
                 <!--                continuation of internal vertical linear layout-->
                 <Button
+                    android:id="@+id/over18"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
