@@ -29,7 +29,8 @@
                 android:layout_margin="10.0dp"
                 android:layout_marginTop="15.0dp"
                 android:background="@drawable/background_crop"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:onClick="before18years">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="163dp"
@@ -42,7 +43,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1.0"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        >
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -79,17 +81,19 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="2.0">
-                        <!--gif is a dependency added to gradle add image-7 not runner-->
-<!--                        <pl.droidsonroids.gif.GifImageView-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:src="@drawable/legdays" />-->
-                        <ImageView
+                        android:layout_weight="2.0"
+                        android:background="@drawable/background_crop">
+<!--                        gif is a dependency added to gradle add image-7 not runner-->
+                        <pl.droidsonroids.gif.GifImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:padding="10.0dp"
-                            android:src="@drawable/cutesplash" />
+                            android:src="@drawable/starjumps"
+                            />
+<!--                        <ImageView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:padding="10.0dp"-->
+<!--                            android:src="@drawable/cutesplash" />-->
 
                     </LinearLayout>
                     <LinearLayout
@@ -123,7 +127,8 @@
                 android:layout_margin="10.0dp"
                 android:layout_marginTop="15.0dp"
                 android:background="@drawable/background_crop"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:onClick="after18years">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="163dp"
@@ -175,15 +180,10 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2.0">
                         <!--gif is a dependency added to gradle add image-7 not runner-->
-                        <!--                        <pl.droidsonroids.gif.GifImageView-->
-                        <!--                            android:layout_width="match_parent"-->
-                        <!--                            android:layout_height="wrap_content"-->
-                        <!--                            android:src="@drawable/legdays" />-->
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:padding="10.0dp"
-                            android:src="@drawable/cutesplash" />
+                                                <pl.droidsonroids.gif.GifImageView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:src="@drawable/starjumps" />
 
                     </LinearLayout>
                     <LinearLayout
@@ -211,16 +211,19 @@
                     android:textAllCaps="true"
                     android:textColor="#fff" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="200dp"
                 android:layout_margin="10.0dp"
                 android:layout_marginTop="15.0dp"
                 android:background="@drawable/background_crop"
+                android:onClick="food"
                 android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="163dp"
+                    android:layout_height="150dp"
                     android:layout_gravity="center"
                     android:baselineAligned="false"
                     android:gravity="center"
@@ -237,7 +240,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="monospace"
                             android:padding="5.0dp"
-                            android:text="@string/under_18_years_old"
+                            android:text="Nutritional Tips"
                             android:textColor="#ff000000"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -247,17 +250,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="serif"
                             android:padding="5.0dp"
-                            android:text="@string/_60_days"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="casual"
-                            android:padding="5dp"
-                            android:text="@string/everyday_15_minutes"
-                            android:textColor="@color/red"
+                            android:text="Suggestion for free"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -268,18 +261,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="2.0">
-                        <!--gif is a dependency added to gradle add image-7 not runner-->
-                        <!--                        <pl.droidsonroids.gif.GifImageView-->
-                        <!--                            android:layout_width="match_parent"-->
-                        <!--                            android:layout_height="wrap_content"-->
-                        <!--                            android:src="@drawable/legdays" />-->
+                        <!--                        gif is a dependency added to gradle add image-7 not runner-->
+
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10.0dp"
-                            android:src="@drawable/cutesplash" />
+                            android:layout_weight="1.0"
+                            app:srcCompat="@drawable/nutrition" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -293,17 +285,10 @@
                         <!--src right click the drawable folder select the vector asset and choose desired icon.-->
                     </LinearLayout>
 
+
                 </LinearLayout>
-                <!--                end of internal horizontal linear layout-->
-                <!--                continuation of internal vertical linear layout-->
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10.0dp"
-                    android:background="@drawable/btn"
-                    android:text="Get Started"
-                    android:textAllCaps="true"
-                    android:textColor="#fff" />
+
+
             </LinearLayout>
 
 
