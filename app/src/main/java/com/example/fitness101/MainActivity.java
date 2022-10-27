@@ -19,13 +19,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void food(View view) {
-        Intent intent=new Intent(getApplicationContext(),DEMO.class);
+        Intent intent=new Intent(getApplicationContext(),FoodActivity.class);
         startActivity(intent);
     }
 
     public void after18years(View view) {
+        Intent intent=new Intent(getApplicationContext(),Over18Activity.class);
+        startActivity(intent);
     }
 
     public void before18years(View view) {
+        Intent intent=new Intent(getApplicationContext(),Under18Activity.class);
+        startActivity(intent);
     }
 }
