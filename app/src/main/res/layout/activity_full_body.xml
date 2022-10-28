@@ -8,6 +8,7 @@
     tools:context=".FullBodyActivity">
 
     <ScrollView
+
         android:id="@+id/fullbodyscrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,6 +28,7 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:onClick="imageClicked"
                 android:id="@+id/highstepping"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -97,6 +99,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:onClick="imageClicked"
                 android:id="@+id/sidehop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -167,6 +170,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:onClick="imageClicked"
                 android:id="@+id/squats"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -237,6 +241,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:onClick="imageClicked"
                 android:id="@+id/wallpush_up"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -307,6 +312,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:onClick="imageClicked"
                 android:id="@+id/butt_bridge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -377,6 +383,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:onClick="imageClicked"
                 android:id="@+id/firehydrantleft"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -447,7 +454,8 @@
 
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/Firehydrantright"
+                android:onClick="imageClicked"
+                android:id="@+id/firehydrantright"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -517,6 +525,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:onClick="imageClicked"
                 android:id="@+id/cobrastretch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -587,6 +596,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:onClick="imageClicked"
                 android:id="@+id/childpose"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -657,6 +667,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:onClick="imageClicked"
                 android:id="@+id/knee_to_chest_left"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -695,43 +706,9 @@
                             android:padding="5dp"
                             android:text="00.30"
                             android:textSize="18sp" />
+                    </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:layout_margin="10dp"
-                            android:layout_marginTop="15dp"
-                            android:orientation="horizontal">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_weight="1.0"
-                                android:orientation="vertical">
-
-                                <TextView
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="monospace"
-                                    android:padding="5dp"
-                                    android:text="Fire hydrant"
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/black"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:padding="5dp"
-                                    android:text="*8"
-                                    android:textSize="18sp" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
+                    <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="2.0">
@@ -741,21 +718,6 @@
                                     android:layout_height="wrap_content"
                                     android:src="@drawable/starjumps" />
                             </LinearLayout>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2.0">
-
-                        <pl.droidsonroids.gif.GifImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/starjumps" />
-                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -775,6 +737,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:onClick="imageClicked"
                 android:id="@+id/knee_to_chest_right"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -845,11 +808,59 @@
 
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/firehydrant_right"
+                android:onClick="imageClicked"
+                android:id="@+id/crunches"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:padding="5dp"
+                            android:text="Crunches"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="00.30"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.0">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/starjumps" />
+                    </LinearLayout>
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -867,6 +878,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:onClick="imageClicked"
                 android:id="@+id/planks"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -937,6 +949,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:onClick="imageClicked"
                 android:id="@+id/buttkicks"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
