@@ -10,7 +10,8 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 public class BuildTipsActivity extends AppCompatActivity {
-    TextView textView;
+    TextView textViewHeading;
+    TextView textViewDescription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +26,12 @@ public class BuildTipsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_build_tips);
         Intent intent=getIntent();
         String details=intent.getStringExtra("details");
-        textView=findViewById(R.id.textView);
-        textView.setText(details);
+        String heading=details.substring(0,details.indexOf(":-"));
+        String description=details.substring(details.indexOf(":-")+1);
+        textViewHeading=findViewById(R.id.textViewHeading);
+        textViewHeading.setText(heading);
+        textViewDescription=findViewById(R.id.textViewDescription);
+        textViewDescription.setText(description);
 
 
 
