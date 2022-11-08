@@ -14,24 +14,26 @@ public class ShowOver18ExcercisesActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_show_over18_excercises);
         Intent intent=getIntent();
         over18ClickedValue= intent.getStringExtra("valueID");
-        int value=Integer.parseInt(over18ClickedValue);
+        int value = Integer.parseInt(over18ClickedValue);
+
+
         switch(value){
-            case 1:
+            case R.id.fullbody:
                 setContentView(R.layout.activity_full_body);
                 break;
-            case 2:
+            case R.id.flattummy:
                 setContentView(R.layout.activity_flat_stomach);
                 break;
-            case 3:
+            case R.id.roundbooty:
                 setContentView(R.layout.activity_round_booty);
                 break;
-            case 4:
+            case R.id.thighwork:
                 setContentView(R.layout.activity_thigh_work);
                 break;
-            case 5:
+            case R.id.tonedarms:
                 setContentView(R.layout.activity_toned_arms);
                 break;
-            case 6:
+            case R.id.splits:
                 setContentView(R.layout.activity_splits);
                 break;
 

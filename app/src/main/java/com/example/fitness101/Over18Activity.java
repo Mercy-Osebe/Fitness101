@@ -22,19 +22,12 @@ public class Over18Activity extends AppCompatActivity {
     }
 
     public void activityImageClicked(View view) {
-        int i;
-        for (i = 0; i < over18Ids.length; i++) {
-            if (view.getId() == over18Ids[i]) {
-                int valueID = i + 1;
-                Intent intent = new Intent(getApplicationContext(), ShowOver18ExcercisesActivity.class);
-                intent.putExtra("valueID",String.valueOf(valueID));
-                startActivity(intent);
+            int valueID = view.getId();
+            Intent intent = new Intent(getApplicationContext(), ShowOver18ExcercisesActivity.class);
+            intent.putExtra("valueID",String.valueOf(valueID));
+            startActivity(intent);
 
-                Log.d(TAG, "activityImageClicked: "+valueID);
-            }
-
-
-        }
+            Log.d(TAG, "activityImageClicked: "+valueID);
 
     }
 }
