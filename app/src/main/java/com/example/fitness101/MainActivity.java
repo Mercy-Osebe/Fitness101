@@ -72,6 +72,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, FoodActivity.class));
 
                 return true;
+            case R.id.moreapps:
+
+                return true;
+            case R.id.terms:
+
+                return true;
+            case R.id.privacy_policy:
+
+                return true;
 
             default:
 
