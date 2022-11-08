@@ -31,9 +31,9 @@ public class ShowOver18ExcercisesActivity extends AppCompatActivity {
 //            case 5:
 //                setContentView(R.layout.activity_toned_arms);
 //                break;
-//            case 6:
-//                setContentView(R.layout.activity_splits);
-//                break;
+            case 6:
+                setContentView(R.layout.activity_splits);
+                break;
 
 
         }
