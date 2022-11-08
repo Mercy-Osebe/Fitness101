@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cream"
     android:padding="1dp">
 
     <RelativeLayout
@@ -23,9 +24,10 @@
             android:textSize="20sp"
             android:gravity="center_horizontal"
             android:padding="12dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:minHeight="50dp"
             android:textStyle="bold"
-            android:background="@color/purple_500" />
+            android:background="@drawable/background_crop" />
         <Space
             android:layout_width="match_parent"
             android:layout_height="2dp"
