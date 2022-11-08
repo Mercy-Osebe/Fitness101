@@ -8,8 +8,6 @@ import android.util.Log;
 import android.view.View;
 
 public class FlatStomachActivity extends AppCompatActivity {
-
-    private static final String TAG = "FullBodyActivity";
     private int[] ids;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +24,6 @@ public class FlatStomachActivity extends AppCompatActivity {
         for (int i = 0; i < ids.length; i++) {
             if(view.getId()==ids[i]){
                 int value=i+1;
-                Log.i(TAG, "imageClicked: first"+ value);
                 Intent intent=new Intent(getApplicationContext(),FlatStomachExcercisesActivity.class);
                 intent.putExtra("value",String.valueOf(value));
                 startActivity(intent);
