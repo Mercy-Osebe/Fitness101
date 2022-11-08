@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/privacy_policy" android:title="Privacy Policy"/>
+    <item android:id="terms" android:title="Terms and Conditions"/>
+
+    <item android:id="@+id/under18Excercises"
+        android:title="Under 18 Excercises">
+    </item>
+    <item android:id="@+id/over18Excercises"
+        android:title="Over 18 Excercises">
+
+    </item>
+    <item android:id="@+id/diet"
+        android:title="Eat healthy">
+
+    </item>
+    <item android:id="@+id/moreapps" android:title="More Apps &amp; share"/>
+
+
+</menu>
