@@ -24,7 +24,7 @@ public class ThighWorkActivity extends AppCompatActivity {
         for (int i = 0; i < ids.length; i++) {
             if(view.getId()==ids[i]){
                 int value=i+1;
-                Intent intent=new Intent(getApplicationContext(),FlatStomachExcercisesActivity.class);
+                Intent intent=new Intent(getApplicationContext(),ThighWorkExcercisesActivity.class);
                 intent.putExtra("value",String.valueOf(value));
                 startActivity(intent);
 
