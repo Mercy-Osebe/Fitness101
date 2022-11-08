@@ -69,7 +69,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ShowFlatStomachExcercisesActivity"
+            android:name=".FlatStomachExcercisesActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
