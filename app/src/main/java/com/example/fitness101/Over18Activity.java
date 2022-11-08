@@ -4,23 +4,37 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
 public class Over18Activity extends AppCompatActivity {
+    private static final String TAG = "Over18Activity";
     private LinearLayout fullbody;
+    int[] over18Ids;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_over18);
-        fullbody=findViewById(R.id.fullbody);
-        fullbody.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),FullBodyActivity.class);
+        over18Ids= new int[]{R.id.fullbody, R.id.flattummy, R.id.roundbooty, R.id.thighwork, R.id.tonedarms, R.id.splits};
+    }
+
+    public void activityImageClicked(View view) {
+        int i;
+        for (i = 0; i < over18Ids.length; i++) {
+            if (view.getId() == over18Ids[i]) {
+                int valueID = i + 1;
+                Intent intent = new Intent(getApplicationContext(), ShowOver18ExcercisesActivity.class);
+                intent.putExtra("valueID",String.valueOf(valueID));
                 startActivity(intent);
+
+                Log.d(TAG, "activityImageClicked: "+valueID);
             }
-        });
+
+
+        }
+
     }
 }

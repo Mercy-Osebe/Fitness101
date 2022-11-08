@@ -24,6 +24,7 @@
             <!--backgroundcrop this is a resource file that helps us to design our uis-->
             <LinearLayout
                 android:id="@+id/fullbody"
+                android:onClick="activityImageClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dp"
@@ -101,6 +102,7 @@
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/flattummy"
+                android:onClick="activityImageClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dp"
@@ -178,6 +180,7 @@
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/roundbooty"
+                android:onClick="activityImageClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dp"
@@ -255,6 +258,7 @@
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/thighwork"
+                android:onClick="activityImageClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dp"
@@ -332,6 +336,7 @@
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/tonedarms"
+                android:onClick="activityImageClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dp"
@@ -409,6 +414,7 @@
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/splits"
+                android:onClick="activityImageClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10.0dp"
