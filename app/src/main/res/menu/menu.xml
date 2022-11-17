@@ -18,6 +18,8 @@
     </item>
     <item android:id="@+id/moreapps"
         android:title="More Apps &amp; share"/>
+    <item android:id="@+id/share"
+        android:title="share"/>
 
 
 </menu>
